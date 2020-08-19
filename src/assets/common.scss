@@ -1,0 +1,20 @@
+@mixin tap-highlight() {
+    &:active {
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+}
+
+@mixin keyframes($animationName) {
+	@-webkit-keyframes #{$animationName} {
+			@content;
+	}
+	@-moz-keyframes #{$animationName} {
+			@content;
+	}
+	@-o-keyframes #{$animationName} {
+			@content;
+	}
+	@keyframes #{$animationName} {
+			@content;
+	}
+}

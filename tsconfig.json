@@ -1,0 +1,50 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "CommonJS",
+    "sourceMap": true,
+    "noEmit": true,
+    "declaration": false,
+    "pretty": true,
+    "strict": true,
+    "downlevelIteration": true,
+    "noImplicitAny": true,
+    "jsx": "react",
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "baseUrl": "src",
+    "paths": {
+      "src/*": [
+        "./*"
+      ],
+      "components/*": [
+        "./components/*"
+      ],
+      "pages/*": [
+        "./pages/*"
+      ],
+      "assets/*": [
+        "./assets/*"
+      ],
+      "libs/*": [
+        "./libs/*"
+      ],
+      "apis/*": [
+        "./apis/*"
+      ],
+      "mock/*": [
+        "./mock/*"
+      ],
+      "store/*": [
+        "./store/*"
+      ],
+      "functions/*": [
+        "./functions/*"
+      ]
+    }
+  },
+  "include": [
+    "./src/**/*"
+  ]
+}

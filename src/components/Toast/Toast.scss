@@ -1,0 +1,36 @@
+$scale : 2;
+
+div.Toast {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    max-width: 70%;
+    font-size: 15px * $scale;
+    line-height: 20px * $scale;
+    border-radius: 4px * $scale;
+    transform: translate3d(-50%, -50%, 0);
+    background-color: rgba(50, 50, 51, 0.88);
+    padding: (8px * $scale) (12px * $scale);
+    z-index: 50;
+    word-break: break-all;
+    width: fit-content;
+
+    &.enter {
+        opacity: 0;
+    }
+
+    &.enter-active {
+        opacity: 1;
+        transition: all .3s;
+    }
+
+    &.exit {
+        opacity: 1;
+    }
+
+    &.exit-active {
+        opacity: 0;
+        transition: all .3s;
+    }
+}

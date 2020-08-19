@@ -1,0 +1,145 @@
+@function pxTorem($px) {
+  @return ($px/ 100)+rem;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: #2C2C2C;
+  font-family: Helvetica, Tahoma, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", STXihei, "Microsoft YaHei", SimHei, "WenQuanYi Micro Hei";
+  font-size: 30px;
+  background-color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0;
+}
+
+a {
+  color: #55a3f8;
+  text-decoration: none;
+
+  &:active,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  outline: 0;
+  border: 0;
+  &:focus {
+    outline: none;
+  }
+}
+
+img  {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.btn {
+  border: 0;
+  outline: 0;
+  background: linear-gradient(315deg, rgba(57, 98, 229, 1) 0%, rgba(107, 134, 221, 1) 100%);
+  border-radius: 8px;
+  font-size: 32px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  line-height: 45px;
+  padding: 14px 0;
+
+  &.btn-inline {
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+.wCahtshare {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+
+  .maskContent {
+    background-color: rgba(0, 0, 0, .6);
+    width: 100%;
+    height: 100vh;
+  }
+
+  .mask {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    img {
+      width: 602px;
+      height: auto;
+      margin: 0 auto;
+      text-align: center;
+      vertical-align: middle;
+    }
+  }
+
+  .maskFoot {
+    position: absolute;
+    bottom: 0;
+    z-index: -10;
+
+    img {
+      width: 750px;
+      height: auto;
+    }
+  }
+}
+
+.PhotoView-PhotoSlider__Counter {
+  padding: 0 20px!important;
+  font-size: 28px!important;
+  margin-top: 20px!important;
+}
+.PhotoView-PhotoSlider__toolbarIcon{
+  margin-top: 20px!important;
+  padding-top: 20px!important;
+}
+.PhotoView__Photo {
+  max-width: none!important;
+}
+
+// ios 横屏字体大小
+@media screen and (max-device-width: 320px){
+  body{-webkit-text-size-adjust:none}
+}
+@media screen and (max-device-width: 480px){
+  body{-webkit-text-size-adjust:none}
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2){
+  body{-webkit-text-size-adjust:none}
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+  body{-webkit-text-size-adjust:none}
+}
